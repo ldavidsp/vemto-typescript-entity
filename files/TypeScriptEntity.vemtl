@@ -1,3 +1,6 @@
+<% if(this.typeORM) {%>
+import {Column, Entity, PrimaryGeneratedColumn} from "typeorm";
+<% }%>
 <# TEMPLATE VARIABLES #>
 <% let modelName = this.model.name.case('pascalCase') %>
 <####>
@@ -5,29 +8,59 @@
 * Homeflow Technologies | <$ modelName $>Entity.
 *
 <% for (let field of this.model.fillableFields()) { %>
-* @params <$ field.name $>
+* @property <$ field.name $>
 <% } %>
 *
 * @constructor Create <$ modelName $>Entity
 */
+
+<% if(this.typeORM || this.typeClass) {%>
+<% if(this.typeORM) {%>
+@Entity('<$ modelName $>')
+<% } %>
+export class <$ modelName $>Entity {
+<% } else {%>
 export interface <$ modelName $>Entity {
+<% }%>
+ <% if(this.typeORM) {%>
+  @PrimaryGeneratedColumn()
+  id: number;
+  <% }%>
   <% for (let field of this.model.fillableFields()) { %>
   <% if(!field.isPrimaryKey()) { %>
   <% if(field.type == 'integer' || field.type == 'unsignedBigInteger') {%>
-  <$ field.name $>: number;
+  @Column()
+  <$ field.name $>?: number;
   <% }%>
   <% if(field.type == 'decimal') {%>
-  <$ field.name $>: number;
+
+  <% if(this.typeORM) {%>
+  @Column()
+  <% }%>
+  <$ field.name $>?: number;
   <% }%>
   <% if(field.type == 'string' || field.type == 'text') {%>
-  <$ field.name $>: string;
+
+  <% if(this.typeORM) {%>
+  @Column()
+  <% }%>
+  <$ field.name $>?: string;
   <% }%>
   <% if(field.type == 'boolean') {%>
-  <$ field.name $>: boolean;
+
+  <% if(this.typeORM) {%>
+  @Column({ default: false })
+  <% }%>
+  <$ field.name $>?: boolean;
   <% }%>
   <% if(field.type == 'date' || field.type == 'dateTime') {%>
-  <$ field.name $>: string = null;
+
+  <% if(this.typeORM) {%>
+  @Column()
+  <% }%>
+  <$ field.name $>?: string = null;
   <% }%>
   <% } %>
   <% } %>
 }
+

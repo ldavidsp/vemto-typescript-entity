@@ -18,7 +18,7 @@ module.exports = (vemto) => {
       let typeClass = pluginData.typeClass
       let typeTSX = pluginData.typeTSX
 
-      vemto.log.warning(`Vemto TypeScript Entity`)
+      vemto.log.warning(`Generate TypeScript Entity`)
       let basePath = 'app/Typescript', options = { formatAs: 'ts', data: {} }
 
       models.forEach(model => {
