@@ -11,7 +11,7 @@
 return /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 123:
+/***/ 974:
 /***/ (function(module, exports) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;// addapted from the document.currentScript polyfill by Adam Miller
@@ -156,14 +156,14 @@ __webpack_require__.d(__webpack_exports__, {
   "default": () => (/* binding */ entry_lib)
 });
 
-;// CONCATENATED MODULE: ../../../../../usr/lib/node_modules/@vue/cli-service/lib/commands/build/setPublicPath.js
+;// CONCATENATED MODULE: ../../../../../../usr/lib/node_modules/@vue/cli-service/lib/commands/build/setPublicPath.js
 /* eslint-disable no-var */
 // This file is imported into lib/wc client bundles.
 
 if (typeof window !== 'undefined') {
   var currentScript = window.document.currentScript
   if (true) {
-    var getCurrentScript = __webpack_require__(123)
+    var getCurrentScript = __webpack_require__(974)
     currentScript = getCurrentScript()
 
     // for backward compatibility, because previously we directly included the polyfill
@@ -181,12 +181,22 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ const setPublicPath = (null);
 
-;// CONCATENATED MODULE: ../../../../../usr/lib/node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??vue-loader-options!../../../../../usr/lib/node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/Component.vue?vue&type=template&id=29e00454&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"w-full"},[_c('div',{staticClass:"mt-4"},[_c('label',{staticClass:"inline-flex items-center"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.typeClass),expression:"typeClass"}],staticClass:"form-checkbox",attrs:{"type":"checkbox"},domProps:{"checked":Array.isArray(_vm.typeClass)?_vm._i(_vm.typeClass,null)>-1:(_vm.typeClass)},on:{"change":[function($event){var $$a=_vm.typeClass,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.typeClass=$$a.concat([$$v]))}else{$$i>-1&&(_vm.typeClass=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.typeClass=$$c}},_vm.save]}}),_c('span',{staticClass:"ml-2"},[_vm._v("Export entity type class ()")])])]),_c('div',{staticClass:"mt-4"},[_c('label',{staticClass:"inline-flex items-center"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.typeORM),expression:"typeORM"}],staticClass:"form-checkbox",attrs:{"type":"checkbox"},domProps:{"checked":Array.isArray(_vm.typeORM)?_vm._i(_vm.typeORM,null)>-1:(_vm.typeORM)},on:{"change":[function($event){var $$a=_vm.typeORM,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.typeORM=$$a.concat([$$v]))}else{$$i>-1&&(_vm.typeORM=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.typeORM=$$c}},_vm.save]}}),_c('span',{staticClass:"ml-2"},[_vm._v("Activate TypeORM")])])]),_c('button',{staticClass:"button-primary mt-5",on:{"click":_vm.save}},[_vm._v("Save")])])}
+;// CONCATENATED MODULE: ../../../../../../usr/lib/node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../usr/lib/node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/Component.vue?vue&type=template&id=1fc05f7f&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"w-full"},[_c('h1',{staticClass:"mt-4 mb-4"},[_vm._v("TypeScript Entity")]),_c('hr'),_c('div',{staticClass:"mt-4"},[_c('label',{staticClass:"inline-flex items-center"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.typeClass),expression:"typeClass"}],staticClass:"form-checkbox",attrs:{"type":"checkbox"},domProps:{"checked":Array.isArray(_vm.typeClass)?_vm._i(_vm.typeClass,null)>-1:(_vm.typeClass)},on:{"change":[function($event){var $$a=_vm.typeClass,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.typeClass=$$a.concat([$$v]))}else{$$i>-1&&(_vm.typeClass=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.typeClass=$$c}},_vm.save]}}),_c('span',{staticClass:"ml-2"},[_vm._v("Export entity type class (default is interface)")])])]),_c('div',{staticClass:"mt-4"},[_c('label',{staticClass:"inline-flex items-center"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.typeTSX),expression:"typeTSX"}],staticClass:"form-checkbox",attrs:{"type":"checkbox"},domProps:{"checked":Array.isArray(_vm.typeTSX)?_vm._i(_vm.typeTSX,null)>-1:(_vm.typeTSX)},on:{"change":[function($event){var $$a=_vm.typeTSX,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.typeTSX=$$a.concat([$$v]))}else{$$i>-1&&(_vm.typeTSX=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.typeTSX=$$c}},_vm.save]}}),_c('span',{staticClass:"ml-2"},[_vm._v("Export entity for React .tsx")])])]),_c('div',{staticClass:"mt-4"},[_c('label',{staticClass:"inline-flex items-center"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.typeORM),expression:"typeORM"}],staticClass:"form-checkbox",attrs:{"type":"checkbox"},domProps:{"checked":Array.isArray(_vm.typeORM)?_vm._i(_vm.typeORM,null)>-1:(_vm.typeORM)},on:{"change":[function($event){var $$a=_vm.typeORM,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=null,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.typeORM=$$a.concat([$$v]))}else{$$i>-1&&(_vm.typeORM=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.typeORM=$$c}},_vm.save]}}),_c('span',{staticClass:"ml-2"},[_vm._v("Enable TypeORM entities")])])]),_c('button',{staticClass:"button-primary mt-5",on:{"click":_vm.save}},[_vm._v("Save")])])}
 var staticRenderFns = []
 
 
-;// CONCATENATED MODULE: ../../../../../usr/lib/node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/Component.vue?vue&type=script&lang=js&
+;// CONCATENATED MODULE: ../../../../../../usr/lib/node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/Component.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -213,6 +223,7 @@ var staticRenderFns = []
     return {
       typeClass: false,
       typeORM: false,
+      typeTSX: false,
       pluginData: {},
     }
   },
@@ -220,6 +231,7 @@ var staticRenderFns = []
   created () {
     this.pluginData = window.vemtoApi.getPluginData()
     this.typeORM = this.pluginData.typeORM
+    this.typeTSX = this.pluginData.typeORM
     this.typeClass = this.pluginData.typeClass
   },
 
@@ -228,6 +240,7 @@ var staticRenderFns = []
       window.vemtoApi.savePluginData({
         typeORM: this.typeORM,
         typeClass: this.typeClass,
+        typeTSX: this.typeTSX,
       })
     }
   }
@@ -235,7 +248,7 @@ var staticRenderFns = []
 
 ;// CONCATENATED MODULE: ./src/Component.vue?vue&type=script&lang=js&
  /* harmony default export */ const src_Componentvue_type_script_lang_js_ = (Componentvue_type_script_lang_js_); 
-;// CONCATENATED MODULE: ../../../../../usr/lib/node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/runtime/componentNormalizer.js
+;// CONCATENATED MODULE: ../../../../../../usr/lib/node_modules/@vue/cli-service/node_modules/@vue/vue-loader-v15/lib/runtime/componentNormalizer.js
 /* globals __VUE_SSR_CONTEXT__ */
 
 // IMPORTANT: Do NOT use ES2015 features in this file (except for modules).
@@ -355,7 +368,7 @@ var component = normalizeComponent(
 )
 
 /* harmony default export */ const Component = (component.exports);
-;// CONCATENATED MODULE: ../../../../../usr/lib/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
+;// CONCATENATED MODULE: ../../../../../../usr/lib/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
 
 
 /* harmony default export */ const entry_lib = (Component);
