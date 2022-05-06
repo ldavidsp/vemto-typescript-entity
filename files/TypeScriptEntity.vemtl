@@ -1,0 +1,33 @@
+<# TEMPLATE VARIABLES #>
+<% let modelName = this.model.name.case('pascalCase') %>
+<####>
+/**
+* Homeflow Technologies | <$ modelName $>Entity.
+*
+<% for (let field of this.model.fillableFields()) { %>
+* @params <$ field.name $>
+<% } %>
+*
+* @constructor Create <$ modelName $>Entity
+*/
+export interface <$ modelName $>Entity {
+  <% for (let field of this.model.fillableFields()) { %>
+  <% if(!field.isPrimaryKey()) { %>
+  <% if(field.type == 'integer' || field.type == 'unsignedBigInteger') {%>
+  <$ field.name $>?: number;
+  <% }%>
+  <% if(field.type == 'decimal') {%>
+  <$ field.name $>?: number;
+  <% }%>
+  <% if(field.type == 'string' || field.type == 'text') {%>
+  <$ field.name $>?: string;
+  <% }%>
+  <% if(field.type == 'boolean') {%>
+  <$ field.name $>?: boolean;
+  <% }%>
+  <% if(field.type == 'date' || field.type == 'dateTime') {%>
+  <$ field.name $>?: string = null;
+  <% }%>
+  <% } %>
+  <% } %>
+};
