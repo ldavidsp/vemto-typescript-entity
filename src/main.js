@@ -28,7 +28,9 @@ module.exports = (vemto) => {
           typeClass,
           typeTSX
         }
-        vemto.renderTemplate('files/TypeScriptEntity.vemtl', `${basePath}/${model.name.case('pascalCase')}.entity.ts`, options)
+
+        const extension = typeTSX ? 'tsx' : 'ts'
+        vemto.renderTemplate('files/TypeScriptEntity.vemtl', `${basePath}/${model.name.case('pascalCase')}.entity.${extension}`, options)
       })
     },
   }
