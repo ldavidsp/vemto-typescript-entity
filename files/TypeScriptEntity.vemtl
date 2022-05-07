@@ -30,35 +30,35 @@ export interface <$ modelName $>Entity {
   <% if(!field.isPrimaryKey()) { %>
   <% if(field.type == 'integer' || field.type == 'unsignedBigInteger') {%>
   @Column()
-  <$ field.name $>?: number;
+  <$ field.name $>: number;
   <% }%>
   <% if(field.type == 'decimal') {%>
-
   <% if(this.typeORM) {%>
+
   @Column()
   <% }%>
-  <$ field.name $>?: number;
+  <$ field.name $>: number;
   <% }%>
   <% if(field.type == 'string' || field.type == 'text') {%>
-
   <% if(this.typeORM) {%>
+
   @Column()
   <% }%>
-  <$ field.name $>?: string;
+  <$ field.name $>: string;
   <% }%>
   <% if(field.type == 'boolean') {%>
-
   <% if(this.typeORM) {%>
+
   @Column({ default: false })
   <% }%>
-  <$ field.name $>?: boolean;
+  <$ field.name $>: boolean;
   <% }%>
   <% if(field.type == 'date' || field.type == 'dateTime') {%>
-
   <% if(this.typeORM) {%>
+
   @Column()
   <% }%>
-  <$ field.name $>?: string = null;
+  <$ field.name $>: string = null;
   <% }%>
   <% } %>
   <% } %>
