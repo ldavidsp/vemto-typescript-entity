@@ -18,7 +18,7 @@ import {Column, Entity, PrimaryGeneratedColumn} from "typeorm";
 <% if(this.typeORM) {%>
 @Entity()
 <% } %>
-export class <$ modelName $><% if(!this.typeORM) {%>Entity<%}%> {
+export class <$ modelName $>Entity {
 <% } else {%>
 export interface <$ modelName $>Entity {
 <% }%>
