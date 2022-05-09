@@ -4,7 +4,7 @@
     "name": "typescript-entity",
     "title": "TypeScript Entity",
     "description": "Vemto TypeScript Entity plugin to generate entities from Laravel to TypeScript.",
-    "image": "https://homeflowapp.com/assets/media/img/vemto_android_model.png",
+    "image": "https://homeflowapp.com/assets/media/img/vemto_typescript.png",
     "main": "src/main.js",
     "vueComponent": "dist/typescript-entity.umd.min.js",
     "repository": {
