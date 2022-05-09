@@ -61,7 +61,7 @@ export interface <$ modelName $>Entity {
 
   @Column()
   <% }%>
-  <$ field.name $>: string = null;
+  <$ field.name $>: string;
   <% }%>
   <% } %>
   <% } %>
