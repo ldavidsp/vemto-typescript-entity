@@ -29,7 +29,10 @@ export interface <$ modelName $>Entity {
   <% for (let field of this.model.fillableFields()) { %>
   <% if(!field.isPrimaryKey()) { %>
   <% if(field.type == 'integer' || field.type == 'unsignedBigInteger') {%>
+  <% if(this.typeORM) {%>
+
   @Column()
+  <% }%>
   <$ field.name $>: number;
   <% }%>
   <% if(field.type == 'decimal') {%>
