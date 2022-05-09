@@ -42,7 +42,7 @@ export default {
   created () {
     this.pluginData = window.vemtoApi.getPluginData()
     this.typeORM = this.pluginData.typeORM
-    this.typeTSX = this.pluginData.typeORM
+    this.typeTSX = this.pluginData.typeTSX
     this.typeClass = this.pluginData.typeClass
   },
 

@@ -11,7 +11,7 @@ import {Column, Entity, PrimaryGeneratedColumn} from "typeorm";
 * @property <$ field.name $>
 <% } %>
 *
-* @constructor Create <$ modelName $>Entity
+* @create <$ modelName $>Entity
 */
 
 <% if(this.typeORM || this.typeClass) {%>
