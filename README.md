@@ -15,9 +15,6 @@ This plugin has only three simple settings:
 ### Entities will be generated in the following project path: ```app/TypeScript```
 
 
-![image](https://firebasestorage.googleapis.com/v0/b/homeflow-technologies.appspot.com/o/typescript.png?alt=media&token=f92d5b12-eb19-4d09-b891-b51aca33fb1b)
-
-
 ## Result
 
 ### 1. Export entity type class: ```Client.entity.ts```
